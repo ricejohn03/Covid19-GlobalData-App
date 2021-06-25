@@ -1,0 +1,155 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+.main-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 25px;
+    margin: 12px;
+    background-color: white;
+}
+.nav {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #4285F4;
+    color: white;
+    position: fixed;
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0, 0.55);
+}
+
+.main-content {
+    margin-top: 80px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://nlihc.org/sites/default/files/pictures/coronavirus.png');
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    animation: mybg 10s infinite;
+}
+
+.chart-conatiner {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    display:flex;
+    flex-direction: row;
+}
+
+.text-center {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-container {
+    margin-top: 20px;
+}
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    border-radius: 5.12rem;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0, 0.35);
+    color: black;
+    transition: all 0.3s;
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border: 2px solid rgba(0,0,0, 0.35);
+    cursor: pointer;
+    font-weight: 900;
+}
+
+    .btn:hover {
+        background-color: black;
+        color: white;
+        font-size: 1.1rem;
+        transition: .3s;
+    }
+
+ .active {
+    
+    color: white;
+}
+
+.blue {
+    background-color: #4285F4;
+    color: white;
+}
+
+.green {
+    background-color: rgb(15,157,88);
+    color: white;
+}
+
+.red {
+    background-color: rgb(255, 0, 19);
+    color: white;
+}
+
+.sm-text {
+    text-align:center;
+    color: rgba(0,0,0, 0.55);
+}
+
+.loader {
+    display: flex;
+    align-content:center;
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes mybg {
+    50% {
+        background-position: 40%, 50%;
+    }
+}
+
+.nav-icon {
+    height: 55px;
+}
